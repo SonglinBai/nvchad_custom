@@ -40,8 +40,4 @@ return {
     opt = true,
     event = "BufRead",
   },
-  {
-    "habamax/vim-godot",
-    ft = { "gdscript" },
-  },
 }
