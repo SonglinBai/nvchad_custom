@@ -31,14 +31,6 @@ return {
     opt = true,
     branch = "v1",
     event = "BufRead",
-    -- cmd = {
-    --   "HopLine",
-    --   "HopLineStart",
-    --   "HopWord",
-    --   "HopPattern",
-    --   "HopChar1",
-    --   "HopChar2",
-    -- },
     config = function()
       require("hop").setup { keys = "etovxqpdygfblzhckisuran" }
     end,
