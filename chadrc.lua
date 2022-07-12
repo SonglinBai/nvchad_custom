@@ -22,6 +22,10 @@ M.plugins = {
 M.ui = {
    theme = "gruvchad",
    theme_toggle = { "gruvchad", "gruvbox_light" },
+
+   statusline = {
+      separator_style = "block"
+   }
 }
 
 M.options = {

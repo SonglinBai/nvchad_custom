@@ -34,4 +34,14 @@ return {
          require("custom.plugins.otherconfigs").diffview()
       end,
    },
+   ["phaazon/hop.nvim"] = {
+      event = "BufRead",
+      branch = "v2",
+      config = function()
+         require("hop").setup { keys = "etovxqpdygfblzhckisuran" }
+      end,
+   },
+   ["machakann/vim-sandwich"] = {
+      event = "BufRead",
+   },
 }

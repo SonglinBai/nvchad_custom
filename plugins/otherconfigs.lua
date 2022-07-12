@@ -29,7 +29,7 @@ M.neogit = function()
       return
    end
    neogit.setup {
-      kind = "split",
+      kind = "tab",
       integrations = {
          diffview = true
       }
