@@ -24,4 +24,10 @@ M.nvimtree = {
    },
 }
 
+M.ui = {
+   statusline = {
+      separator_style = "block",
+   },
+}
+
 return M

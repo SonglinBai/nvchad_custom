@@ -44,4 +44,11 @@ return {
    ["machakann/vim-sandwich"] = {
       event = "BufRead",
    },
+   ["jvgrootveld/telescope-zoxide"] = {
+      requires = "nvim-telescope/telescope.nvim",
+      after = "telescope.nvim",
+      config = function()
+         require("telescope").load_extension "zoxide"
+      end,
+   },
 }

@@ -14,6 +14,7 @@ M.plugins = {
    override = {
       ["kyazdani42/nvim-tree.lua"] = override.nvimtree,
       ["nvim-treesitter/nvim-treesitter"] = override.treesitter,
+      ["NvChad/ui"] = override.ui,
    },
 
    user = require "custom.plugins",
@@ -22,10 +23,6 @@ M.plugins = {
 M.ui = {
    theme = "gruvchad",
    theme_toggle = { "gruvchad", "gruvbox_light" },
-
-   statusline = {
-      separator_style = "block"
-   }
 }
 
 M.options = {

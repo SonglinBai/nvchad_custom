@@ -15,6 +15,12 @@ M.custom = {
    },
 }
 
+M.telez = {
+   n = {
+      ["<leader>fz"] = { ":Telescope zoxide list<CR>", "  find zoxide" },
+   },
+}
+
 M.hop = {
    n = {
       [",w"] = { ":HopWord<CR>", "hop find word" },
