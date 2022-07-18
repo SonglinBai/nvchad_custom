@@ -29,6 +29,8 @@ M.options = {
    user = function()
       opt.shiftwidth = 4
       opt.relativenumber = true
+      opt.clipboard = ""
+      opt.guifont = "CaskaydiaCove NF:h15"
    end,
 }
 

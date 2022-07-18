@@ -8,7 +8,7 @@ return {
    },
    -- dim inactive windows
    ["andreadev-it/shade.nvim"] = {
-      module = "shade",
+      -- module = "shade",
       config = function()
          require("custom.plugins.otherconfigs").shade()
       end,
