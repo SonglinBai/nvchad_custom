@@ -55,13 +55,13 @@ map(
    {}
 )
 map(
-   "",
+   "x",
    "t",
    "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = false })<cr>",
    {}
 )
 map(
-   "",
+   "x",
    "T",
    "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = false })<cr>",
    {}

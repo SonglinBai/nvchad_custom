@@ -1,13 +1,14 @@
 local M = {}
 
 local opt = vim.opt
+local g = vim.g
 
 local override = require "custom.override"
 
 M.plugins = {
    options = {
       lspconfig = {
-         setup_lspconfig = "custom.plugins.lspconfig",
+         setup_lspconf = "custom.plugins.lspconfig",
       },
    },
 
@@ -15,6 +16,7 @@ M.plugins = {
       ["kyazdani42/nvim-tree.lua"] = override.nvimtree,
       ["nvim-treesitter/nvim-treesitter"] = override.treesitter,
       ["NvChad/ui"] = override.ui,
+      ["williamboman/nvim-lsp-installer"] = override.lspinstaller,
    },
 
    user = require "custom.plugins",

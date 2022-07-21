@@ -30,4 +30,8 @@ M.ui = {
    },
 }
 
+M.lspinstaller = {
+   automatic_installation = false,
+}
+
 return M
