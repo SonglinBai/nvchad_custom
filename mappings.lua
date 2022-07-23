@@ -6,6 +6,10 @@ M.custom = {
       ["n"] = { "nzzzv", "" },
       ["N"] = { "Nzzzv", "" },
       ["J"] = { "mzJ`z", "" },
+      ["<leader>tc"] = {
+         "<cmd>tabclose<cr>",
+         "   close tab"
+      }
    },
    v = {
       ["J"] = { ":m '>+1<cr>gv=gv", "" },

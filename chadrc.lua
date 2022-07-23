@@ -32,7 +32,7 @@ M.options = {
       opt.shiftwidth = 4
       opt.relativenumber = true
       opt.clipboard = ""
-      opt.guifont = "CaskaydiaCove NF:h15"
+      opt.guifont = "CaskaydiaCove NF:h13"
    end,
 }
 

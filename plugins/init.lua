@@ -41,8 +41,17 @@ return {
          require("hop").setup { keys = "etovxqpdygfblzhckisuran" }
       end,
    },
-   ["machakann/vim-sandwich"] = {
+   ["kylechui/nvim-surround"] = {
       event = "BufRead",
+      config = function ()
+         require("nvim-surround").setup {
+            keymaps = {
+               normal = "sa",
+               delete = "sd",
+               change = "sr",
+            }
+         }
+      end
    },
    ["jvgrootveld/telescope-zoxide"] = {
       requires = "nvim-telescope/telescope.nvim",
@@ -51,4 +60,20 @@ return {
          require("telescope").load_extension "zoxide"
       end,
    },
+   ["pwntester/octo.nvim"] = {
+      requires = {
+         "nvim-lua/plenary.nvim",
+         "nvim-telescope/telescope.nvim",
+         "kyazdani42/nvim-web-devicons",
+      },
+      cmd = "Octo",
+      after = "telescope.nvim",
+      config = function()
+         require("octo").setup()
+      end,
+   },
+   ["dstein64/vim-startuptime"] = {
+      disable = true,
+      cmd = "StartupTime"
+   }
 }
