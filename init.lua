@@ -6,45 +6,45 @@ local g = vim.g
 
 autogroup("setIndent", { clear = true })
 autocmd("FileType", {
-   group = "setIndent",
-   pattern = "lua",
-   command = "setlocal shiftwidth=3 tabstop=3",
+  group = "setIndent",
+  pattern = "lua",
+  command = "setlocal shiftwidth=2 tabstop=2",
 })
 
 autogroup("YankHighlight", { clear = true })
 autocmd("TextYankPost", {
-   group = "YankHighlight",
-   callback = function()
-      vim.highlight.on_yank { higroup = "IncSearch", timeout = "300" }
-   end,
+  group = "YankHighlight",
+  callback = function()
+    vim.highlight.on_yank { higroup = "IncSearch", timeout = "300" }
+  end,
 })
 
 autogroup("IMSelect", { clear = true })
 autocmd("VimEnter", {
-   group = "IMSelect",
-   callback = function()
-      vim.cmd ":silent :!im-select.exe 1033"
-   end,
+  group = "IMSelect",
+  callback = function()
+    vim.cmd ":silent :!im-select.exe 1033"
+  end,
 })
 autocmd("InsertLeave", {
-   group = "IMSelect",
-   callback = require("custom.utils.im-select").InsertLeave,
+  group = "IMSelect",
+  callback = require("custom.utils.im-select").InsertLeave,
 })
 autocmd("InsertEnter", {
-   group = "IMSelect",
-   callback = require("custom.utils.im-select").InsertEnter,
+  group = "IMSelect",
+  callback = require("custom.utils.im-select").InsertEnter,
 })
 
 new_cmd("EnableShade", function()
-   require("shade").setup()
+  require("shade").setup()
 end, {})
 
 new_cmd("EnableAutosave", function()
-   require("autosave").setup()
+  require("autosave").setup()
 end, {})
 
-if vim.fn.exists("g:neovide") then
-   g.neovide_cursor_animation_length = 0
-   g.neovide_cursor_antialiasing = false
-   -- g.neovide_profiler = true
+if vim.fn.exists "g:neovide" then
+  g.neovide_cursor_animation_length = 0
+  g.neovide_cursor_antialiasing = false
+  -- g.neovide_profiler = true
 end
